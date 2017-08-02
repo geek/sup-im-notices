@@ -1,7 +1,7 @@
 {
   "name": "im-notices",
   "version": "0.2.0",
-  "description": "Sends incident management notices from a JIRA SCI ticket",
+  "description": "Sends incident management notices from a JIRA ticket",
   "main": "./lib",
   "scripts": {
     "test": "node_modules/.bin/grunt"
