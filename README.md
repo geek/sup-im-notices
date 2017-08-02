@@ -3,7 +3,7 @@
 ## Usage
 
 ```
-$ ./bin/im-notices sci-135
+$ ./bin/im-notices sci-123
 To: distlist@domain.tld
 Subject: Incident Alert: SCI-123 - Compute nodes on strike
 
