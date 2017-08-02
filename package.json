@@ -1,0 +1,30 @@
+{
+  "name": "im-notices",
+  "version": "0.2.0",
+  "description": "Sends incident management notices from a JIRA SCI ticket",
+  "main": "./lib",
+  "scripts": {
+    "test": "node_modules/.bin/grunt"
+  },
+  "bin": {
+    "im-notices": "./bin/im-notices"
+  },
+  "author": "",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "colors": "~1.1.2",
+    "handlebars": "~4.0.6",
+    "jira-client": "~6.1.1",
+    "manta": "~4.4.0",
+    "moment": "~2.18.1",
+    "nodemailer": "~2.6.4",
+    "vasync": "^1.6.4",
+     "request": "~2.81.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt": "~1.0.1",
+    "grunt-cli": "~1.2.0"
+  }
+}

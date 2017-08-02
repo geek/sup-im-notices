@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+var requiredEnv = [
+    'JIRA_DOMAIN',
+    'JIRA_PATH',
+    'JIRA_USER',
+    'JIRA_PASS',
+    'STATUS_API_ID',
+    'STATUS_API_TOKEN',
+    'STATUS_URL'];
+
+requiredEnv.forEach(function (i) {
+    if (!process.env[i]) {
+        console.error('Fatal: Missing environment variable %s', i);
+        process.exit(1);
+    }
+});
+
+if (process.argv.length < 3) {
+  console.error("Missing Incident ID\nUsage:\n im-notices SCI-123\n");
+  process.exit(1);
+}
+
+require('../lib')();

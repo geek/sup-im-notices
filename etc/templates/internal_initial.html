@@ -1,0 +1,41 @@
+<h1>{{#if resolved}}Resolved {{/if}}Incident Notification</h1>
+<h2>{{cloud}}</h2>
+
+<hr />
+
+<div style="padding:0.5em">
+    <b>Incident Title:</b> {{#if resolved}}[Resolved] {{/if}}<a href="{{jira}}/browse/{{ID}}">{{ID}}</a> - {{summary}}<br />
+</div>
+
+<div style="padding:0.5em"><b>Priority:</b> {{details.priority}}<br /></div>
+
+<div style="padding:0.5em"><b>Incident Description:</b> {{details.incident_description}}<br /></div>
+
+<div style="padding:0.5em">
+    <b>Current Status:</b><br />
+<pre style="font-family: sans-serif; padding-left:0.5em">
+{{current_status}}
+</pre>
+</div>
+
+{{#if resolved}}
+<div style="padding:0.5em"><b>Root Cause:</b> {{details.root_cause}}<br /></div>
+{{/if}}
+
+<div style="padding:0.5em"><b>Incident Start Time:</b> {{details.incident_start_time}}<br /></div>
+
+{{#if resolved}}
+<div style="padding:0.5em"><b>Incident End Time:</b> {{details.incident_end_time}}<br /></div>
+{{/if}}
+
+{{#if resolved}}
+<div style="padding:0.5em"><b>Incident Duration:</b> {{details.incident_duration}}<br /></div>
+{{/if}}
+
+<div style="padding:0.5em"><b>Incident Status:</b> {{details.incident_status}}<br /></div>
+
+<div style="padding:0.5em"><b>Issue Type:</b> {{details.issue_type}}<br /></div>
+
+<div style="padding:0.5em"><b>Incident Owner:</b> {{details.incident_owner}}<br /></div>
+
+<div style="padding:0.5em"><b>Location:</b> {{details.location}}<br /></div>
