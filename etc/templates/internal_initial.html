@@ -11,12 +11,32 @@
 
 <div style="padding:0.5em"><b>Incident Description:</b> {{details.incident_description}}<br /></div>
 
+<div style="padding:0.5em"><b>Component:</b> {{details.issue_type}}<br /></div>
+
+<div style="padding:0.5em"><b>Locations:</b> {{details.location}}<br /></div>
+
 <div style="padding:0.5em">
     <b>Current Status:</b><br />
-<pre style="font-family: sans-serif; padding-left:0.5em">
+<pre style="font-family: sans-serif; padding-left:0.5em;margin:0.5em;">
 {{current_status}}
 </pre>
 </div>
+
+<div style="padding:0.5em">
+    <b>Impact:</b><br />
+<pre style="font-family: sans-serif; padding-left:0.5em;margin:0.5em;">
+{{impact}}
+</pre>
+</div>
+
+{{#unless resolved}}
+<div style="padding:0.5em">
+    <b>Resolution Actions:</b><br />
+<pre style="font-family: sans-serif; padding-left:0.5em;margin:0.5em;">
+{{resolution_actions}}
+</pre>
+</div>
+{{/unless}}
 
 {{#if resolved}}
 <div style="padding:0.5em"><b>Root Cause:</b> {{details.root_cause}}<br /></div>
@@ -33,9 +53,3 @@
 {{/if}}
 
 <div style="padding:0.5em"><b>Incident Status:</b> {{details.incident_status}}<br /></div>
-
-<div style="padding:0.5em"><b>Issue Type:</b> {{details.issue_type}}<br /></div>
-
-<div style="padding:0.5em"><b>Incident Owner:</b> {{details.incident_owner}}<br /></div>
-
-<div style="padding:0.5em"><b>Location:</b> {{details.location}}<br /></div>
