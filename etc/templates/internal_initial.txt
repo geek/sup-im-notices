@@ -1,7 +1,7 @@
 
 {{#if resolved}}Resolved {{/if}}Incident Notification
 {{{cloud}}}
-------------------------------
+---------------------
 Incident Title: {{#if resolved}}[Resolved] {{/if}}{{{ID}}} - {{{summary}}}
 Priority: {{{details.priority}}}
 Incident Description: {{{details.incident_description}}}
