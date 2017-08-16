@@ -1,6 +1,6 @@
 {
   "name": "im-notices",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Sends incident management notices from a JIRA ticket",
   "main": "./lib",
   "scripts": {
@@ -19,7 +19,7 @@
     "moment": "~2.18.1",
     "nodemailer": "~2.6.4",
     "vasync": "^1.6.4",
-     "request": "~2.81.0"
+    "request": "~2.81.0"
   },
   "private": true,
   "devDependencies": {
