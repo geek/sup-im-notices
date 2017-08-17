@@ -1,6 +1,6 @@
 {
   "name": "im-notices",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Sends incident management notices from a JIRA ticket",
   "main": "./lib",
   "scripts": {
